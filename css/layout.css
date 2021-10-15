@@ -2,5 +2,104 @@
 body{
   font-size: 14.4px;
   font-family: 'Noto Sans KR', sans-serif;
-  min-width: 1300px
+  min-width: 1300px;
+  background-color: #fcf9f5;
+}
+#header{
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-top: 1em;
+  padding-right: 4em;
+  padding-left: 4em;
+  z-index: 100;
+}
+/* menu 클릭 시 나오는 메뉴화면 */
+#header .menu_gnb{
+  display: none;
+}
+#header .gnb {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#header .gnb ul{
+  overflow: hidden;
+  width: 170px;
+}
+
+.gnb ul li a{
+  display: block;
+  width: 100%;
+}
+.gnb ul li .letter__word{
+  letter-spacing: -1.5px;
+  margin-right: 3px;
+}
+.letter__word{
+  display: inline-block;
+}
+.letter__word .letter__word__char{
+  display: inline-block;
+}
+.letter__word__char--inner{
+  position: relative;
+  /* transform: matrix(, 0, 0, 1, 0, 0); */
+}
+.letter__word__char--inner::after{
+ content: attr(data-letter);
+ position: absolute;
+ top: 100%;
+ left: 0;
+}
+.gnb .logo{
+  width: 10.7em;
+  height: auto;
+  text-align: center;
+}
+.gnb .logo h1{
+  width: 100%;
+  height: 100%;
+}
+.gnb .logo h1 a{
+  display: block;
+  width: 100%;height: 100%;
+  font-size:20px;
+}
+.gnb .menu{
+  width: 5.14em;
+  height: 5.14em;
+  flex-basis: auto;
+  border-radius: 50%;
+  background-color: #f2eae0;
+}
+.gnb .menu .menu__btn--holder{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.gnb .menu .menu__btn--holder a{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.gnb .menu .menu__btn--holder a i{
+  display: block;
+  height: 1px;
+  width: 100%;
+  background-color: #000;
+}
+.gnb .menu .menu__btn--holder a i:nth-child(1){
+  width: 30px;
+  margin-bottom: 5px;
+}
+.gnb .menu .menu__btn--holder a i:nth-child(2){
+  width: 25px;
 }
