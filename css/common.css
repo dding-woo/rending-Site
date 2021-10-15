@@ -1,0 +1,23 @@
+:root{
+  --color-orange:#e45a2b;
+  --color-mustard:rgb(177, 159, 57);
+  --font-number:"font-family: 'Festive', cursive;"
+}
+
+.ally--hidden{
+  display: inline-block;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip:rect(0 0 0 0);
+  margin: -1px;
+}
+.scroll--hidden{
+  overflow: hidden;
+}
+.container{
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 6em 4em;
+}
