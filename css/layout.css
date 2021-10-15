@@ -4,6 +4,7 @@ body{
   font-family: 'Noto Sans KR', sans-serif;
   min-width: 1300px;
   background-color: #fcf9f5;
+  line-height: 1.2;
 }
 #header{
   position: fixed;
@@ -18,9 +19,7 @@ body{
   z-index: 100;
 }
 /* menu 클릭 시 나오는 메뉴화면 */
-#header .menu_gnb{
-  display: none;
-}
+
 #header .gnb {
   width: 100%;
   height: 100%;
@@ -32,7 +31,93 @@ body{
   overflow: hidden;
   width: 170px;
 }
-
+#header .menu_gnb{
+  display:none;
+  /* opacity: 0; */
+  background-color: var(--color-mustard);
+}
+#header .menu_gnb.menu__container{
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  width: 100vw;
+  height: 100vh;
+  padding: 18em 4em  2em;
+  color: #fcf9f5;
+}
+.menu_gnb .menu__content{
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  text-align: center;
+}
+#header .menu__content > ul{
+  width: 570px;
+  margin: 0 auto;
+}
+#header .menu__content > ul li a{
+  position: relative;
+  z-index: 2;
+  display: inline;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 5em;
+  line-height: 1.2;
+  font-weight: 400;
+}
+#header .menu__content > .menu__list li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Libre Baskerville', serif;
+}
+#header .menu__content .menu--num{
+  font-family: 'Festive', cursive;
+  display: block;
+  width: 35px;height: 35px;
+  margin-right: 1.2em;
+  font-size: 20px;
+  margin-top: 10px;
+}
+#header .menu__content > ul > li:nth-child(1){
+  margin-right: 5.35em;
+  margin-bottom: 2em;
+}
+#header .menu__content > ul > li:nth-child(2){
+  margin-right: 0em;
+  margin-left: 11em;
+}
+#header .menu__content > ul > li:nth-child(3){
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+#header .menu__content > ul > li:nth-child(4){
+  margin-right: 7.35em;
+}
+#header .menu__content > ul > li:nth-child(5){
+  margin-left: 13em;
+}
+#header .menu__content .etc{
+  display: flex;
+  justify-content: center;
+}
+#header .menu__content .etc li{
+  margin-bottom: 0px;
+  font-size: 1.25em;
+  line-height: 1.5;
+  font-weight: 400;
+  margin-right: 30px;
+  text-align: center;
+}
+#header .menu__content .etc li:last-child{
+  margin-right: 0;
+}
 .gnb ul li a{
   display: block;
   width: 100%;
