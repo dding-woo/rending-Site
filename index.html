@@ -8,7 +8,8 @@
   <meta name="author" content="황승우">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>황승우의 포트폴리오 랜딩페이지</title>
-  <link href="https://fonts.googleapis.com/css2?family=Festive&family=Noto+Sans+KR:wght@300;400;700&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Festive&family=Libre+Baskerville&family=Noto+Sans+KR:wght@300;500;700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/index.css">
@@ -93,23 +94,31 @@
         </div>
       </div>
     </nav>
-    <div class="menu_gnb">
-      <div class="menu__wrap">
-        <div class="menu_content">
-          <ul>
-            <li><a href="#"><span class="menu--num">1</span>Projects</a></li>
-            <li><a href="#"><span class="menu--num">2</span>About</a></li>
-            <li><a href="#"><span class="menu--num">3</span>Work</a></li>
-            <li><a href="#"><span class="menu--num">2</span>Skill</a></li>
-            <li><a href="#"><span class="menu--num">4</span>Contact</a></li>
+    <div class="menu_gnb menu__container">
+      <div class="menu__content">
+        <ul class="menu__list">
+          <li>
+            <span class="menu--num">01</span><a href="#">Projects</a>
+          </li>
+          <li>
+            <span class="menu--num">02</span><a href="#">About</a>
+          </li>
+          <li>
+            <span class="menu--num">03</span><a href="#">project</a>
+          </li>
+          <li>
+            <span class="menu--num">04</span><a href="#">Skill</a>
+          </li>
+          <li>
+            <span class="menu--num">05</span><a href="#">Contact</a>
+          </li>
+        </ul>
+        <div>
+          <ul class="etc">
+            <li><a href="#">Notion</a></li>
+            <li><a href="#">github</a></li>
+            <li><a href="#">Velog</a></li>
           </ul>
-          <div>
-            <ul class="etc">
-              <li><a href="#">Notion</a></li>
-              <li><a href="#">github</a></li>
-              <li><a href="#">Velog</a></li>
-            </ul>
-          </div>
         </div>
       </div>
   </header>
@@ -118,12 +127,12 @@
     <h2 class="ally--hidden">intro영역입니다.</h2>
     <div class="container intro">
       <div class="img__wrap">
-        <img src="./img/profile2.png" alt="프로필사진">
+        <img src="./img/intro__bg.jpg" alt="프로필사진">
       </div>
       <div class="text__wrap">
         <div class="text__wrap__top">
-          <span>DDingwoo</span>
-          <span>portpolio</span>
+          <span class="text__left">DDingwoo</span>
+          <span class="text__right">portpolio</span>
         </div>
         <div class="text__wrap__bot">
           <p>
@@ -134,12 +143,12 @@
           <p>
             Faithful<br>
             Enthusiasm<br>
-            newcomer<br>
+            Newcomer<br>
           </p>
         </div>
-        <div class="intro__scroll">
-          <p>Scroll please Scroll</p>
-        </div>
+      </div>
+      <div class="intro__scroll">
+        <p>Scroll please Scroll</p>
       </div>
     </div>
   </section>
@@ -147,108 +156,130 @@
   <section id="about">
     <h2 class="ally--hidden">저의 대한 소개 영역입니다.</h2>
     <div class="container about">
-      <div class="img__wrap">
-        <img src="./img/profile1.jpg" alt="">
-      </div>
-      <div class="about__text">
-        <div class="title">
-          <p>고민하는<span>웹 퍼블리셔</span>가 되고 싶습니다!</p>
-          <p>사용자와 고객을 만족시키는 웹 퍼블리셔가 되고 싶습니다!</p>
-          <p>협업에 필요한 사람이 되고싶습니다.</p>
+      <div class="about__me">
+        <div class="img__wrap">
+          <div class="img"></div>
         </div>
-        <div class="desc">
-          <p>
-            저는 신입 웹 퍼블리셔가 되고 싶은 황승우입니다.<br>
-            코드를 간결하고 빠르게 작성 하려 노력합니다. <br>
-          </p>
-          <p>
-            데드라인에 맞춰 일하는 것을 중요하게 생각합니다. 신뢰만큼 고객과 유저에게 중요한 것은 없다고 생각합니다.
-          </p>
+        <div class="about__text">
+          <div class="title">
+            <p>고민하는<span>웹 퍼블리셔</span>가 되고 싶습니다!</p>
+            <p>사용자와 고객을 만족시키는 웹 퍼블리셔가 되고 싶습니다!</p>
+            <p>협업에 필요한 사람이 되고싶습니다.</p>
+          </div>
+          <div class="desc">
+            <p>
+              저는 신입 웹 퍼블리셔가 되고 싶은 황승우입니다.<br>
+              코드를 간결하고 빠르게 작성 하려 노력합니다. <br>
+            </p>
+            <p>
+              데드라인에 맞춰 일하는 것을 중요하게 생각합니다. "신뢰" 만큼 고객과 유저에게 중요한 것은 없다고 생각하고 최선을 다해 임하겠습니다.
+            </p>
+          </div>
+          <div class="scroll__img">
+            <img src="./img/svg/arrow-down.svg" alt="스크롤해주세요">
+          </div>
+          <div class="circle__img">
+            <span class="ally--hidden">의미없는 원</span>
+            <img src="./img/svg/circle-text.svg" alt="">
+          </div>
         </div>
-      </div>
-      <img src="./img/svg/arrow-down.svg" alt="스크롤해주세요">
-      <div class="circle__img">
-        <img src="./img/svg/circle-text.svg" alt="">
       </div>
     </div>
   </section>
-  <!-- work -->
-  <section id="work">
+  <!-- project -->
+  <section id="project">
     <h2 class="ally--hidden">포트폴리오 작업물 영역입니다.</h2>
+    <div class="project__container">
+      <h3>Project</h3>
+    </div>
     <div class="horizontal__container">
       <div class="container">
-        <div class="work__wrap">
-          <div class="work__list">
-            <ul class="work__item">
+        <div class="project__wrap">
+          <div class="project__list">
+            <ul class="project__item">
               <li>
-                <div class="work img__wrap">
-                  <img src="" alt="">
-                </div>
-                <div class="text__wrap">
-                  <h3>나이키</h3>
-                  <span class="text__color--point">Mobile</span>
-                </div>
+                <a href="#" target="_blank">
+                  <div class="project img__wrap">
+                    <img src="./img/intro__bg.jpg" alt="">
+                  </div>
+                  <div class="text__wrap">
+                    <h3>나이키</h3>
+                    <span class="text__color--point">Mobile</span>
+                  </div>
+                </a>
               </li>
               <li>
-                <div class="work img__wrap">
-                  <img src="" alt="">
-                </div>
-                <div class="text__wrap">
-                  <h3>아트마켓</h3>
-                  <span class="text__color--point">PC</span>
-                </div>
+                <a href="#" target="_blank">
+                  <div class="project img__wrap">
+                    <img src="./img/intro__bg.jpg" alt="">
+                  </div>
+                  <div class="text__wrap">
+                    <h3>아트마켓</h3>
+                    <span class="text__color--point">PC</span>
+                  </div>
+                </a>
               </li>
               <li>
-                <div class="work img__wrap">
-                  <img src="" alt="">
-                </div>
-                <div class="text__wrap">
-                  <h3>제네시스</h3>
-                  <span class="text__color--point">반응형</span>
-                </div>
+                <a href="#" target="_blank">
+                  <div class="project img__wrap">
+                    <img src="./img/intro__bg.jpg" alt="">
+                  </div>
+                  <div class="text__wrap">
+                    <h3>제네시스</h3>
+                    <span class="text__color--point">반응형</span>
+                  </div>
+                </a>
               </li>
               <li>
-                <div class="work img__wrap">
-                  <img src="" alt="">
-                </div>
-                <div class="text__wrap">
-                  <h3>서울시</h3>
-                  <span class="text__color--point">웹 표준, 웹접근성</span>
-                </div>
+                <a href="#" target="_blank">
+                  <div class="project img__wrap">
+                    <img src="./img/intro__bg.jpg" alt="">
+                  </div>
+                  <div class="text__wrap">
+                    <h3>서울시</h3>
+                    <span class="text__color--point">웹 표준, 웹접근성</span>
+                  </div>
+                </a>
               </li>
               <li>
-                <div class="work img__wrap">
-                  <img src="" alt="">
-                </div>
-                <div class="text__wrap">
-                  <h3>인천공항</h3>
-                  <span class="text__color--point">PC</span>
-                </div>
+                <a href="#" target="_blank">
+                  <div class="project img__wrap">
+                    <img src="./img/intro__bg.jpg" alt="">
+                  </div>
+                  <div class="text__wrap">
+                    <h3>인천공항</h3>
+                    <span class="text__color--point">PC</span>
+                  </div>
+                </a>
               </li>
               <li>
-                <div class="work img__wrap">
-                  <img src="" alt="">
-                </div>
-                <div class="text__wrap">
-                  <h3>랜딩사이트</h3>
-                  <span class="text__color--point">PC</span>
-                </div>
+                <a href="#" target="_blank">
+                  <div class="project img__wrap">
+                    <img src="./img/intro__bg.jpg" alt="">
+                  </div>
+                  <div class="text__wrap">
+                    <h3>랜딩사이트</h3>
+                    <span class="text__color--point">PC</span>
+                  </div>
+                </a>
               </li>
               <li>
-                <div class="work contents__wrap">
-                  <p>열심히 만들었습니다.</p>
-                  <p>그리고 저의 포트폴리오를 <br>봐주셔서 감사합니다.</p>
-                  <p>긍정적인 답변을 기대하겠습니다.</p>
-                </div>
-                <div class="text__wrap">
-                  <h3>is'it you we're looking for?</h3>
-                  <span class="text__color--point">Join us!</span>
-                </div>
+                <a href="#" target="_blank">
+                  <div class="project contents__wrap">
+                    <p>열심히 만들었습니다.</p>
+                    <p>그리고 저의 포트폴리오를 <br>봐주셔서 감사합니다.</p>
+                    <p>긍정적인 답변을 기대하겠습니다.</p>
+                  </div>
+                  <div class="text__wrap">
+                    <h3>is'it you we're looking f
+                </a>or?</h3>
+                <span class="text__color--point">Join us!</span>
               </li>
             </ul>
           </div>
         </div>
       </div>
+    </div>
     </div>
   </section>
   <!-- skill -->
