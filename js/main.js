@@ -7,7 +7,23 @@ $(document).ready(function () {
 
     e.preventDefault();
     $('#header .menu_gnb').toggleClass('showmenu')
+
   });
+
+  // 메뉴 클릭 시 해당 영역으로 이동
+
+  $('.menu__list > li > a').on("click", function (e) {
+    e.preventDefault();
+    var menuData = $($(this).data('link'));
+    var menuTopHeight = $(menuData).offset();
+    scrollMove(menuTopHeight);
+  });
+
+  function scrollMove(select) {
+    $('html').animate({ scrollTop: select.top }, 400)
+  }
+
+
 
 
 
