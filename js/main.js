@@ -23,8 +23,25 @@ $(document).ready(function () {
     $('html').animate({ scrollTop: select.top }, 400)
   }
 
+  // 프로젝트 가로 스크롤
 
 
+  gsap.registerPlugin(ScrollTrigger);
+  let sections = gsap.utils.toArray(".project__item li");
+
+  gsap.to(sections, {
+    xPercent: -100 * (sections.length - 1),  //xPercent: transform:translateX()
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".horizontal__container",
+      pin: true,
+      scrub: 1,
+      markers: true,
+      // snap: 1 / (sections.length - 1),
+      // base vertical scrolling on how wide the container is so it feels more natural.
+      end: "+=3500"
+    }
+  });
 
 
 
