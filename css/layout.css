@@ -5,6 +5,8 @@ body{
   min-width: 1300px;
   background-color: #fcf9f5;
   line-height: 1.2;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 /* header */
 #header{
