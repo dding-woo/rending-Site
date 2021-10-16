@@ -20,4 +20,16 @@
   max-width: 1440px;
   margin: 0 auto;
   padding: 6em 4em;
+  position: relative;
+}
+.title__container{
+  max-width: 1440px;
+  padding: 6em 4em;
+  margin: 0 auto;
+}
+.title__container h3{
+  font-size: 3.47em;
+  line-height: 1.2;
+  font-family: 'Libre Baskerville', serif;
+  text-align: center;
 }
