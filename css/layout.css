@@ -27,15 +27,23 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  z-index: 100;
 }
 #header .gnb ul{
   overflow: hidden;
   width: 170px;
 }
 #header .menu_gnb{
-  display:none;
-  /* opacity: 0; */
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.4s ease;
   background-color: var(--color-mustard);
+}
+#header .menu_gnb.showmenu{
+  visibility: visible;
+  transition: all 0.4s ease;
+  opacity: 1;
 }
 #header .menu_gnb.menu__container{
   position: fixed;
@@ -99,7 +107,7 @@ body{
   margin-bottom: 2em;
 }
 #header .menu__content > ul > li:nth-child(4){
-  margin-right: 7.35em;
+  margin-right: 17.35em;
 }
 #header .menu__content > ul > li:nth-child(5){
   margin-left: 13em;
@@ -160,6 +168,8 @@ body{
   font-size:20px;
   font-family: 'Libre Baskerville', serif;
 }
+/* 클릭 했을 때 메뉴 커스텀 */
+
 .gnb .menu{
   width: 5.14em;
   height: 5.14em;
@@ -178,6 +188,7 @@ body{
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  padding: 15px;
 }
 .gnb .menu .menu__btn--holder a i{
   display: block;
