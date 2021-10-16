@@ -147,12 +147,12 @@
   }
   }
 /* Project */
-.project__container{
+.title__container{
   max-width: 1440px;
   padding: 6em 4em;
   margin: 0 auto;
 }
-.project__container h3{
+.title__container h3{
   font-size: 3.47em;
   line-height: 1.2;
   font-family: 'Libre Baskerville', serif;
@@ -196,4 +196,44 @@
   font-size: 1.25em;
   line-height: 1.5;
   color: var(--color-orange);
+}
+/* Skill */
+.container.skill{
+  margin-top: 15em;
+  height: 60em;
+}
+.parallax__img__wrap{
+  position: absolute;
+  z-index: 1;
+}
+.parallax__img__wrap img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.parallax__img__wrap.first{
+  top: 17.36em;
+  width: 23.06em;
+  height: 34.72em;
+  margin:0 auto;
+}
+.parallax__img__wrap.second{
+  left: 34.03em;
+  right: 34.03px;
+  width: 31.94em;
+  height: 47.92em;
+}
+.parallax__img__wrap.third{
+  left: 55.76em;
+  top: 23.96em;
+  right: auto;
+  width: 21.46em;
+  height: 32.22em;
+}
+.parallax__img__wrap.four{
+  left: auto;
+  top: 27.92em;
+  right: 0px;
+  width: 14.86em;
+  height: 22.36em;
 }
