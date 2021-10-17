@@ -7,6 +7,11 @@ body{
   line-height: 1.2;
   overflow-x: hidden;
   overflow-y: scroll;
+  cursor: none;
+}
+body.dark{
+  background-color: #3E2127;
+  color: #fcf9f5;;
 }
 /* header */
 #header{
