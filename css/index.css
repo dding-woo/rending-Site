@@ -260,10 +260,9 @@
   position: absolute;
   z-index: 1;
 }
-.parallax__img__wrap img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.parallax__img__wrap a{
+  background-position: center center;
+  background-size: cover;
 }
 .parallax__img__wrap.first{
   top: 17.36em;
@@ -276,6 +275,7 @@
   right: 34.03px;
   width: 31.94em;
   height: 47.92em;
+
 }
 .parallax__img__wrap.third{
   left: 55.76em;
@@ -290,57 +290,33 @@
   right: 0px;
   width: 14.86em;
   height: 22.36em;
+  background-color: black;
 }
-/* Contact */
-#contact{
-  height: 48em;
-  position: relative;
-}
-.container.contact{
-  padding-top: 12em;
-  padding-bottom: 0;
-}
-.align__center__contact{
+.parallax__img__wrap.first a{
+  display: block;
+  width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+  background: url(../img/velog__img.png)no-repeat;
 }
-.align__center__contact .title{
-  width: 53.89em;
+.parallax__img__wrap.second a{
+  display: block;
+  width: 100%;
+  height: 100%;;
+  background: url(../img/github_img.png)no-repeat;
 }
-.title span{
-  font-size: 1.5em;
+.parallax__img__wrap.third a{
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url(../img/notion.jpg)no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
-.align__center__contact  .contact__email{
-  /* color: #fcf9f5; */
-  font-size: 1.74em;
-  line-height: 1.5;
-  margin-top: 50px;
-  margin-bottom: 125px;
-  text-decoration: underline;
-}
-.align__center__contact  .contact__info{
-  margin-top: 25px;
-  font-size: 1.11em;
-  line-height: 1.5;
-  width: 400px;
-  display: flex;
-  justify-content: space-between;
-  /* color: #fcf9f5; */
-}
-.align__center__contact  .contact__info a{
-  margin-left: 16px;
-}
-.footer__gradient{
-  position: absolute;
-  left: 0%;
-  top: auto;
-  right: 0%;
-  bottom: 0px;
-  z-index: 0;
-  height: 100vh;
-  /* background: linear-gradient(
-0deg, #e45a2b, rgba(228, 90, 43, 0)); */
+.parallax__img__wrap.four a{
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url(../img/notion_img2.png)no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
