@@ -4,6 +4,30 @@
   --font-number:"font-family: 'Festive', cursive;"
 }
 
+.cursor{
+  position: absolute;
+  left: 0; top: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  z-index: 9999;
+  background-color:var(--color-orange);
+  user-select: none;
+  pointer-events: none;
+  transition: 
+      background-color .2s,
+      border-color .2s,
+      border-radius .2s,
+      transform .6s;
+}
+.cursor.hovercursor{
+  transform: scale(1.4);
+  opacity: 0.5;
+  transition:transform 0.3s;
+}
+.mouse__over__style{
+  cursor: none;
+}
 .ally--hidden{
   display: inline-block;
   position: absolute;
