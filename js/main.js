@@ -29,6 +29,27 @@ $(document).ready(function () {
     $('html').animate({ scrollTop: select.top }, 400)
   }
 
+
+  // 미우스 따라나니기 효과
+  $(window).mousemove(function (e) {
+    // console.log(`페이지X좌표${e.pageX}`);
+    // console.log(`페이지Y좌표${e.pageY}`);
+    $('.cursor').css({ left: e.pageX - 25, top: e.pageY - 25 });
+  });
+
+  // 마우스 오버 효과
+  $('body .mouse__over__style').hover(function (e) {
+    $('.cursor').addClass('hovercursor')
+  }, function () {
+    $('.cursor').removeClass('hovercursor')
+  })
+
+  // 다크모드
+  $('.dark__mode > a').click(function (e) {
+    e.preventDefault();
+    $('body').toggleClass('dark');
+  });
+
   // 프로젝트 가로 스크롤
 
 
@@ -49,6 +70,17 @@ $(document).ready(function () {
     }
   });
 
+  // skill y축 올라가는 효과
+  gsap.to('.parallax__img__wrap', {
+    scrollTrigger: {
+      trigger: '#skill',
+      start: 'top 50%',
+      // end:'+=300',
+      scrub: 2,
+      // markers:true,
+    },
+    y: -100
+  })
 
 
   // contact영역 스크롤 하면 opacity랑 background 
