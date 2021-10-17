@@ -6,9 +6,15 @@ $(document).ready(function () {
   $('.menu a').on("click", function (e) {
 
     e.preventDefault();
-    $('#header .menu_gnb').toggleClass('showmenu')
+    $('#header .menu_gnb').toggleClass('showmenu');
 
+    if ($('#header .menu_gnb').hasClass('showmenu')) {
+      $('.gnb .menu').addClass('onmenu')
+    } else {
+      $('.gnb .menu').removeClass('onmenu')
+    }
   });
+
 
   // 메뉴 클릭 시 해당 영역으로 이동
 
@@ -45,9 +51,7 @@ $(document).ready(function () {
 
 
 
-
-
-
+  // contact영역 스크롤 하면 opacity랑 background 
 
 
 
