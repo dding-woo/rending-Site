@@ -63,7 +63,7 @@ $(document).ready(function () {
       trigger: ".horizontal__container",
       pin: true,
       scrub: 1,
-      markers: true,
+      // markers: true,
       // snap: 1 / (sections.length - 1),
       // base vertical scrolling on how wide the container is so it feels more natural.
       end: "+=3500"
@@ -81,11 +81,6 @@ $(document).ready(function () {
     },
     y: -100
   })
-
-
-  // contact영역 스크롤 하면 opacity랑 background 
-
-
 
 
 });//지우면 안됨
